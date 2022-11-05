@@ -66,6 +66,32 @@ public class BorderLayoutEX {
 		panel5.add(panel9, BorderLayout.EAST);
 		panel5.add(panel10, BorderLayout.CENTER);
 		
+		JPanel panel11 = new JPanel();
+		JPanel panel12 = new JPanel();
+		JPanel panel13 = new JPanel();
+		JPanel panel14 = new JPanel();
+		JPanel panel15 = new JPanel();
+		
+		panel11.setBackground(Color.red);
+		panel12.setBackground(Color.green);
+		panel13.setBackground(Color.yellow);
+		panel14.setBackground(Color.magenta);
+		panel15.setBackground(Color.blue);
+		
+		panel10.setLayout(new BorderLayout());
+		
+		panel11.setPreferredSize(new Dimension(20,20));
+		panel12.setPreferredSize(new Dimension(20,20));
+		panel13.setPreferredSize(new Dimension(20,20));
+		panel14.setPreferredSize(new Dimension(20,20));
+		panel15.setPreferredSize(new Dimension(20,20));
+		
+		panel10.add(panel11, BorderLayout.NORTH);
+		panel10.add(panel12, BorderLayout.EAST);
+		panel10.add(panel13, BorderLayout.WEST);
+		panel10.add(panel14, BorderLayout.SOUTH);
+		panel10.add(panel15, BorderLayout.CENTER);
+		
 		frame.add(panel1, BorderLayout.NORTH);
 		frame.add(panel2, BorderLayout.WEST);
 		frame.add(panel3, BorderLayout.EAST);
